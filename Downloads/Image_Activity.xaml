@@ -1,0 +1,60 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Downloads.Image_Activity"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="Downloads" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="Image_Activity" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Margin="12,13,12,-13" Grid.Row="1">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Img1:" VerticalAlignment="Top" Margin="0,11,0,0" Width="56" RenderTransformOrigin="0.808,0.487"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Img2:" VerticalAlignment="Top" Margin="0,63,0,0" Width="56" RenderTransformOrigin="0.808,0.487"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Img3:" VerticalAlignment="Top" Margin="0,115,0,0" Width="56" RenderTransformOrigin="0.808,0.487"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Img4:" VerticalAlignment="Top" Margin="0,168,0,0" Width="56" RenderTransformOrigin="0.808,0.487"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Img5:" VerticalAlignment="Top" Margin="0,221,0,0" Width="56" RenderTransformOrigin="0.808,0.487"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Img6:" VerticalAlignment="Top" Margin="0,274,0,0" Width="56" RenderTransformOrigin="0.808,0.487"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Img7:" VerticalAlignment="Top" Margin="0,326,0,0" Width="56" RenderTransformOrigin="0.808,0.487"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Img8:" VerticalAlignment="Top" Margin="0,377,0,0" Width="56" RenderTransformOrigin="0.808,0.487"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Img9:" VerticalAlignment="Top" Margin="0,424,0,0" Width="56" RenderTransformOrigin="0.808,0.487"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Img10:" VerticalAlignment="Top" Margin="0,476,0,0" Width="65" RenderTransformOrigin="0.808,0.487"/>
+            <Button Content="Back" HorizontalAlignment="Left" Margin="319,514,0,0" VerticalAlignment="Top" Click="go_back"/>
+            <Button Content="Download" HorizontalAlignment="Left" Margin="170,514,0,0" VerticalAlignment="Top" Click="start"/>
+            <TextBlock Text="Progress: " Margin="0,531,286,37" />
+            <StackPanel Margin="100,531,286,37" Orientation="Horizontal">
+                <TextBlock x:Name="tbProgress" />
+            </StackPanel>            
+        </Grid>
+        <TextBox HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="http://blogs.sjsu.edu/today/files/2014/01/mima-mounds-1l9fs40.jpg" VerticalAlignment="Top" Width="414" Margin="66,1,0,0" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="http://blogs.sjsu.edu/today/files/2014/01/Gragera-inpost-11xdqr8.jpg" VerticalAlignment="Top" Width="414" Margin="66,52,0,0" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="http://blogs.sjsu.edu/today/files/2014/01/spider-inpost-285iz3l.jpg" VerticalAlignment="Top" Width="414" Margin="66,258,0,0" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="http://www.engr.sjsu.edu/files/images/exceed-image-14-120815.thumbnail.jpg" VerticalAlignment="Top" Width="414" Margin="66,310,0,0" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="http://www.engr.sjsu.edu/files/images/exceed-group-1-120815.thumbnail.jpg" VerticalAlignment="Top" Width="414" Margin="66,362,0,0" Grid.Row="1" />
+        <TextBox HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="http://blogs.sjsu.edu/today/files/2013/11/dance_0027_20131101-396-0996.jpg-2klbnkv.jpg" VerticalAlignment="Top" Width="414" Margin="66,104,0,0" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="http://blogs.sjsu.edu/today/files/2013/11/dance_0022_20131101-396-0822.jpg-1qyfyhk.jpg" VerticalAlignment="Top" Width="414" Margin="66,154,0,0" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="http://blogs.sjsu.edu/today/files/2013/11/dance_0009_20131101-396-0355.jpg-16qimv6.jpg" VerticalAlignment="Top" Width="414" Margin="66,206,0,0" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="http://blogs.sjsu.edu/today/files/2013/11/dance_0003_20131101-396-0045.jpg-zq3m7w.jpg" VerticalAlignment="Top" Width="414" Margin="66,413,0,0" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="http://blogs.sjsu.edu/today/files/2014/02/0005_proam-1uawpew.jpg" VerticalAlignment="Top" Width="414" Margin="66,464,0,0" Grid.Row="1" />
+    </Grid>
+
+</phone:PhoneApplicationPage>

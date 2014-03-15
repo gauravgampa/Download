@@ -1,0 +1,50 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Downloads.PDF_Activity"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="Downloads" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="PDF_Activity" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Button Content="Back" HorizontalAlignment="Left" Margin="335,506,0,0" VerticalAlignment="Top" Click="go_back"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="PDF1:" VerticalAlignment="Top" Margin="0,65,0,0" Width="56" RenderTransformOrigin="0.808,0.487"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="PDF2:" VerticalAlignment="Top" Margin="0,158,0,0" Width="56" RenderTransformOrigin="0.808,0.487"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="PDF3:" VerticalAlignment="Top" Margin="0,252,0,0" Width="56" RenderTransformOrigin="0.808,0.487"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="PDF4:" VerticalAlignment="Top" Margin="0,340,0,0" Width="56" RenderTransformOrigin="0.808,0.487"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="PDF5:" VerticalAlignment="Top" Margin="0,434,0,0" Width="56" RenderTransformOrigin="0.808,0.487"/>
+            <Button Content="Download" HorizontalAlignment="Left" Margin="175,506,0,0" VerticalAlignment="Top" Click="start"/>
+            <TextBlock Text="Progress: " Margin="0,531,286,37" />
+            <StackPanel Margin="100,531,286,37" Orientation="Horizontal">
+                <TextBlock x:Name="tbProgress" />
+            </StackPanel> 
+        </Grid>
+        <TextBox HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="http://www.sjsu.edu/registrar/docs/name_change.pdf" VerticalAlignment="Top" Width="414" Margin="66,39,0,0" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="http://as.sjsu.edu/steinbeck/documents/BIOGRAPHY_Biography_in_Depth.pdf" VerticalAlignment="Top" Width="414" Margin="66,135,0,0" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="http://my.sjsu.edu/docs/hr/recruiting/UG_RS_SJHR_Open_Recruitment_Attachments.pdf" VerticalAlignment="Top" Width="414" Margin="66,231,0,0" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="http://www.engr.sjsu.edu/media/pdf/svls/f09/pres_om_nalamasu_092409.pdf" VerticalAlignment="Top" Width="414" Margin="66,320,0,0" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="http://www.engr.sjsu.edu/gaojerry/IEEEMobileCloud2013/shuttle%20info.pdf" VerticalAlignment="Top" Width="414" Margin="66,412,0,0" Grid.Row="1"/>
+    </Grid>
+
+</phone:PhoneApplicationPage>
